@@ -7,8 +7,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="data" />
         <module name="client" />
+        <module name="Hp-web-api" />
+        <module name="data" />
         <module name="updater" />
       </profile>
       <profile name="Disabled" enabled="true" />
@@ -16,11 +17,13 @@
     <bytecodeTargetLevel>
       <module name="client" target="17" />
       <module name="data" target="17" />
+      <module name="Hp-web-api" target="17" />
       <module name="updater" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Hp-web-api" options="-parameters" />
       <module name="client" options="-parameters" />
       <module name="data" options="-parameters" />
       <module name="updater" options="-parameters" />
