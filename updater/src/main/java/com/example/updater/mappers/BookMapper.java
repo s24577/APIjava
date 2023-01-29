@@ -14,7 +14,7 @@ public class BookMapper implements IMapEntities<BookDto, Book> {
     @Override
     public Book map(BookDto bookDto, Book book) {
         book.setTitle(bookDto.getTitle());
-        book.setPages(bookDto.getPages());
+        // book.setPages(bookDto.getPages());
         book.setImageUrl(bookDto.getImageUrl());
         book.setReleaseDate(bookDto.getReleaseDate());
         return book;

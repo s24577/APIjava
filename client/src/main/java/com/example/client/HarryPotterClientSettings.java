@@ -26,5 +26,4 @@ public class HarryPotterClientSettings implements IHarryPotterClientSettings {
 
 
 
-
 }

@@ -1,13 +1,13 @@
 package com.example.data.model;
 
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.*;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
+
+import java.util.*;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -19,10 +19,10 @@ public class Book {
     private String title;
     private String imageUrl;
     @ManyToMany(mappedBy = "books")
-    private List<Artist> bookArtists = new ArrayList<>();
+    private Set<Artist> bookArtists = new HashSet<>();
 
     private int pages;
-    private LocalDateTime releaseDate;
+    private Date releaseDate;
 
 
 }

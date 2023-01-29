@@ -7,6 +7,7 @@ import lombok.Setter;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 @Getter
 @Setter
@@ -17,9 +18,10 @@ public class BookDto {
     @JsonProperty("image_url")
     private String imageUrl;
     @JsonProperty("book_artists")
-    private List<ArtistDto> bookArtistsDto = new ArrayList<>();
+    private List<ArtistDto> bookArtistsDto;
+
     private int pages;
     @JsonProperty("release_date")
-    private LocalDateTime releaseDate;
+    private Date releaseDate;
 
 }

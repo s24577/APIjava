@@ -1,16 +1,15 @@
 package com.example.data.model;
 
+import jakarta.persistence.*;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
+
+import java.util.HashSet;
+import java.util.Set;
 
 @Getter
 @Setter
-@NoArgsConstructor
 @Entity
 public class Artist {
     @Id
@@ -19,5 +18,5 @@ public class Artist {
     private String name;
     private String role;
     @ManyToMany
-    private List<Book> books= new ArrayList<>();
+    private Set<Book> books= new HashSet<>();
 }

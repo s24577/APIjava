@@ -4,6 +4,8 @@ import com.example.client.contract.*;
 
 public interface IHarryPotterClient {
 
+    List<ShorterBookDto> getResults();
+
     ArtistDto getArtist();
     BookDto getBook();
     PersonDto getCharacter();

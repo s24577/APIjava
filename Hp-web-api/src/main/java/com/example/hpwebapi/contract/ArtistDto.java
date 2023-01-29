@@ -12,9 +12,10 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 public class ArtistDto {
     private Long id;
     private String name;
     private String role;
-    private List<BookDto> booksDto= new ArrayList<>();
+    private List<BookDto> booksDto;
 }

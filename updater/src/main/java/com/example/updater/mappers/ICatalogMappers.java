@@ -14,4 +14,5 @@ public interface ICatalogMappers {
     IMapEntities<HouseDto, House> forHouse();
     IMapEntities<DistinctionDto, Distinction> forDistinction();
 
+
 }
